@@ -14,7 +14,7 @@
         border-bottom
         v-for="item of list " 
         :key="item.id"
-        
+        @click="handleCityClick(item.name)"
         >
             {{item.name}}
         </li>       
@@ -40,6 +40,12 @@ export default {
       list: [],
       tiemr: null
     };
+  },
+  methods:{
+     handleCityClick (city){
+         this.$store.commit('changeCity',city)
+         this.$router.push('/')
+      }
   },
   computed: {
     hasNoData () {
@@ -73,7 +79,7 @@ export default {
   },
   
   mounted () {
-    this.scroll = new Bscroll(this.$refs.search)
+    this.scroll = new Bscroll(this.$refs.wrapper,{click:true})
   }
 };
 </script>
