@@ -23,9 +23,7 @@ export default {
     computed:{
       ...mapState(["city"])
     },
-    props: {
-      city: String
-    }
+   
 }
 </script>
 <style  lang='stylus' scoped> 

@@ -7,7 +7,12 @@
            <span>猜你喜欢</span>
         </div>
         
-         <div class="like-list" v-for="item in stores" :key="item.id">
+         <router-link class="like-list" 
+         v-for="item in stores" 
+         :key="item.id"
+         tag="div"
+         :to=" '/detail/' + item.id "
+         >
 
             <img  class='like-list-img'  :src="item.imgUrl" alt="">  
            
@@ -20,7 +25,7 @@
             </div>
             
             <p class="like-bottom-desc">{{item.desc}}</p>
-        </div>
+        </router-link >
  
 
            
@@ -52,9 +57,6 @@ list:Array
          
   },
   methods:{
-      getStore:function(rate){
-          
-      }
   }
 };
 </script>
@@ -109,7 +111,7 @@ list:Array
         .like-price
           color #ff8300
           font-size .3rem
-          line-height .6rem
+          line-height 1rem
           .price-symbol
               font-size .1rem
               color #ff8300

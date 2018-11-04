@@ -77,7 +77,7 @@ export default {
         }
   },
   mounted () {
-      this.scroll = new Bscroll(this.$refs.wrapper,{click:true})
+     this.scroll=new Bscroll(this.$refs.wrapper, { mouseWheel: true, click: true, tap: true })
   }
 };
 </script>
