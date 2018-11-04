@@ -1,21 +1,24 @@
-# travel
+# 去哪儿
 
-> A Vue.js project
+Vue开发的单页面应用，实现了去哪儿的部分功能，首页列表、景点详情以及城市选择列表
 
-## Build Setup
+## 技术栈
+ **前端** 
+ 
+ vue+vuex+vue-router
+ 
+ **插件**
+ 
+ - better-scroll 用于页面滚动
+ - awesome-swiper 轮播图
+ 
+ - fastClick 处理移动端点击三秒延迟
+ 
+ - axios 发起请求
+ 
+ 
+**后端** 
 
-``` bash
-# install dependencies
-npm install
+node.js+Mysql
 
-# serve with hot reload at localhost:8080
-npm run dev
-
-# build for production with minification
-npm run build
-
-# build for production and view the bundle analyzer report
-npm run build --report
-```
-
-For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+## 部分页面截图
